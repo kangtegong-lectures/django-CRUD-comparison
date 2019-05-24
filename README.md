@@ -1,7 +1,7 @@
 
-## CRUD로 비교하는 FBV vs CBV
+# CRUD로 비교하는 FBV vs CBV
 
-### 개요 (프로젝트 목표)
+## 개요 (프로젝트 목표)
 
 이 프로젝트는 django의 Function 기반 View (Function-Based View, 이하 FBV로 약칭) 와 Class 기반 View (Class-Based View, 이하 CBV로 약칭)로 CRUD를 구현함으로써,
 
@@ -10,7 +10,7 @@
 CBV는 classcrud라는 앱으로 구현하였고
 FBV는 viewvrud라는 앱으로 구현하였다
 
-### 사진 및 기능
+## 사진 및 기능
 
 외관이 그럴싸하지 않을 수 있겠지만, 이건 실제 이용자들에게 배포되는 사이트가 아니고, django의 내부의 동작원리를 파악하기 위한 프로젝트이니 너무 실망하지는 않기를 바란다.
 
@@ -27,7 +27,7 @@ FBV로 만들어진 Blog를 이용할지 선택할 수 있다
 
 일단 Class Based CRUD를 선택해보자
 
-## C - Create
+# C - Create
 
 3.jpg 
 
@@ -35,19 +35,19 @@ FBV로 만들어진 Blog를 이용할지 선택할 수 있다
 
 4.jpg
 
-## R - Read
+# R - Read
 
  본문 자세히 보기를 누르면 방금 작성한 글을 자세히 볼 수 있는 페이지로 이동하게 된다
 
 5.jpg
 
-## U - Update
+# U - Update
 
 수정하기 버튼을 누르면 방금 작성한 글을 수정할 수 있는 곳으로 이동하게 된다
 
 6.jpg
 
-## D - Delete 
+# D - Delete 
 
 삭제하기를 누르면 정말로 삭제할 것인지를 묻는 페이지로 이동하고, 정말 삭제할 것임을 확인하면 해당 객체 (블로그 글) 이 삭제되는 형태로 구현하였다
 
