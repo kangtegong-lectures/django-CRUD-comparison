@@ -1,4 +1,29 @@
 from django.shortcuts import render
-from django.views.generic.list import ListView
+from django.utils import timezone
 
-from viewcrud.models import Blog
+from django.urls import reverse_lazy
+from django.views.generic.list import ListView # 데이터 보여주기
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView #데이터 추가
+from .models import ClassBlog
+
+
+class BlogView(ListView):
+    model = ClassBlog
+
+class BlogCreate(CreateView):
+    model = ClassBlog
+    fields = ['title', 'body']
+    success_url = reverse_lazy('list')
+
+class BlogDetail(DetailView):
+    model = ClassBlog
+
+class BlogUpdate(UpdateView):
+    model = ClassBlog
+    fields = ['title', 'body']
+    success_url = reverse_lazy('list')
+
+class BlogDelete(DeleteView):
+    model = ClassBlog
+    success_url = reverse_lazy('list')
